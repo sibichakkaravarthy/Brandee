@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+:root {
+    --primary:#FFCE00;
+    --secondary: #FE4880;
+    --dark: #212121;
+    --light:#F3F3F3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.logo{
+   max-height: 100%;
+   max-width: 100%;
+   width: 100px;
+   height: 100px;
+   /*border: 1px solid;*/
+   background: url('./Brandee_1_transparent.png') no-repeat scroll center center transparent;
+   background-size: cover;
+   float: left;
+}
+#features{
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: rgb(253, 254, 255);
+}
+#features h1{
+    font-size: 45px;
+    text-align: center;
+    color: #F13631;
+    padding-bottom: 30px;
+}
+.feature-row h4{
+    font-size:30px;
+}
+.feature-row p{
+    font-size:18px;
+    font-weight: 700;
+}
+.feature-row{
+    width:80%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.feature-col{
+    flex-basis: 50%;
+    text-align:center;
+}
+.feature-col img{
+    width: 100px;
+}
+.feature-col h4{
+    font-size:30px;
+    margin-bottom: 15px;
+    font-size:20px;
+    font-weight: 700;
+    color:#242A56;
+}
+.feature-col P{
+    display:block;
+    padding-right:10px;
+    font-size:18px;
+    font-weight: 700;
+    color:rgb(4, 73, 100);
+    line-height: 1.2rem;
+}
+
+/* features ends here */
+
+
+/* another about application starts here */
+#back{
+    padding:100px 0px; 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:silver;
+    
+}
+.back-about-text h1{
+    font-size: 45px;
+}
+.back-about-text h4{
+    font-size:30px;
+}
+.back-about-text p{
+    font-size: 18px;
+    font-weight:700;
+}
+.back-about-left-col{
+    flex-basis: 50%;
+    
+
+}
+.back-about-left-col img{
+    width:100%;
+
+}
+.back-about-right-col{
+    flex-basis:50%;
+    text-align:center;
+}
+.back-about-text{
+    max-width: 800px;
+    margin-right: 10px;
+    margin-left: 30px;
+    display: inline-block;
+  
+}
+.back-about-text p{
+    line-height: 2rem; 
+}
+
+
+/* another about application ends here */
+
+
+/*clients starts here*/
+
+.clients{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background-color:navy;
+}
+.clients div{
+    padding:20px;
+    margin:auto;
+    overflow: hidden;
+    max-width: 1200px;
+    line-height: 2em;
+}
+.clients h1{
+    margin-top: 10px;
+    color: #F44909;
+}
+.clients img{
+    width: 250px;
+    padding:0 30px;
+    height: 200px;
+}
+.clients p{
+    margin-top: 10px;
+    font-size:20px;
+    
+    color: #F0E4E0;
+}
+.clients .pstyle{
+font-family: Rancho, cursive;
+    font-weight: 20px;
+    font-size: 35px;
+    color: #F13631;
+    letter-spacing: 0.1em;
+
+}
+@media screen and (max-width: 950px){
+    .clients div{
+        padding:20px;
+        margin-left:10px;
+        overflow: hidden;
+        max-width: 1200px;
+        line-height: 2em;
+    }
+}
+/*clients ends here*/
+
+
+/* Profile card starts here
+/*--cardflip starts here--*/
+
+
+.card-flip{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size:45px;
+    background: #F3AC16;
+    text-transform: uppercase;
+}
+
+.flip{
+    background: linear-gradient(180deg, #0600B3, #B00699);
+    perspective: 600px;
+    padding-bottom: 70px;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 80vh;
+    flex-wrap:wrap;
+    vertical-align: baseline;
+     
+}
+.content{
+    position: relative;
+    width: 375px;
+    height: 330px;
+    padding: 10px;
+    transition: .5s;
+    transform-style: preserve-3d;
+    margin:20px; 
+}
+
+.content:hover{
+    transform:rotateY(-180deg);
+}
+.content .front, .back{
+    position:absolute;
+    width: 100%;
+    height: 100%;/*--front & backcard will have some space--*/
+    border-radius: 14px;
+}
+.content .front{
+    background:url("./profile12.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+}/*--image will visible in the card*/
+
+.content:nth-child(2) .front{
+    background:url("./profile2.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+}
+.content:nth-child(3) .front{
+    background:url("./profile3.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+}
+.content:nth-child(4) .front{
+    background:url("./profile4.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+}
+
+.content .front h1{
+    position: relative;
+    margin-top:76.5%;
+    padding-top:10px;
+    width:100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 20px;
+    letter-spacing: 5px;
+    background:#ff6700;
+    color: navy;
+    font-size:30px;
+  
+}/*--h2 tag comes bottom of the front card*/
+
+.content .back{
+    background: #F48510;
+    text-align: center;
+    transform:rotateY(180deg);
+    transform-style: preserve-3d;
+}
+.content .back::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    background: #ff6700;
+    opacity: 0.5;
+ 
+}
+.content .back h2{
+    position: relative;
+    top: 1.5em;
+    font-size: 20px;
+    font-weight: normal;
+}
+.content .back p{
+    position: relative;
+    top:1em;
+    font-size:18px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5em;
+}/*backside card alignment done*/
+
+.content .back button{
+    position: relative;
+    top:20px;
+    padding:8px 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: 0.1s;
+    border: 1px solid black;
+    color: whitesmoke;
+}
+.content .back button:hover{
+    background:black;
+    color:#fff;
+    border-color:black;
+    box-shadow: inset 0 0 5px #e91e63,
+                inset 0 0 10px #e91e63,
+                      0 0 15px #e91e63,
+                      0 0 20px #e91e63,
+}
+@media screen and (max-width: 900px){
+    .flip{
+        flex-direction:column;
+    }
+    .content{
+        width:80.5%;
+        margin: 40px 20px;
+    }
+     .font{
+        margin: 30px 20px;
+        width: 80%;
+    }
+    .font h1{
+        font-size: 30px;
+    }
+    .content .front h1{
+        position: relative;
+        margin-top:88.5%;
+        padding-top:15px;
+        letter-spacing: 2px;
+  
+      
+    }
+    .content .back button{
+        position: relative;
+        top:10px;
+        padding:5px 30px;
+    }
+
+}
