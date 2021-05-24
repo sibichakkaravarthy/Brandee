@@ -440,17 +440,8 @@ a{
   padding-right: 15px;
   font-size: 0.1em;
 }
-.big-circle {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: linear-gradient(to bottom, #F30B0B, #F39B0B);
-  bottom: 42%;
-  right: 40%;
-  transform: translate(-40%, 38%);
 }
-}
+
 /*Animated BE Logo circle*/
 .circle-container{
   width: 16em;
