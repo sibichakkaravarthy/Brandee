@@ -113,9 +113,14 @@ nav .hmenu .hlist .amenu {
 header{
   position: relative;
   max-width: 1700px;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 10px;
-  background: #fff;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3724b5+0,f2722e+97,f2722e+97,f95827+100 */
+background: #3724b5; /* Old browsers */
+background: -moz-linear-gradient(left,  #3724b5 0%, #f2722e 97%, #f2722e 97%, #f95827 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #3724b5 0%,#f2722e 97%,#f2722e 97%,#f95827 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #3724b5 0%,#f2722e 97%,#f2722e 97%,#f95827 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3724b5', endColorstr='#f95827',GradientType=1 ); /* IE6-9 */
   box-sizing: border-box;
   border-radius: 4px;
 box-shadow: 0 2px 5px rgba(0,0,0,.2);
@@ -149,7 +154,7 @@ opacity: 1;
    width: 100px;
    height: 100px;
    /*border: 1px solid;*/
-   background: url('./Images/Brandee_1_transparent.png') no-repeat scroll center center transparent;
+   background: url('./Brandee_1_transparent.png') no-repeat scroll center center transparent;
    background-size: cover;
    float: left;
 }
@@ -171,20 +176,23 @@ nav ul li{
 nav ul li a{
   display: block;
   margin: 10px 0;
+  font-size: 20px;
+  color: white;
   padding: 10px 20px;
   text-decoration: none;
-  color: #262626;
+  align-items: center;
+  justify-content: center;
+  /*color: #262626;*/
 }
 nav ul li a.active,
 nav ul li a:hover {
-  background: #069370;
+  background: #2D2092;
   color: #fff;
   transition: 0.5s;
 }
 @media (max-width:1200px){
 header{
   margin:  20px;
-
 }
 }
 @media (max-width:768px){
@@ -193,13 +201,12 @@ header{
  width: 40px;
  height: 40px;
  margin: 10px;
- background: #ccc;
+ background: white;
  float: right;
  cursor: pointer;
  text-align: center;
  font-size: 30px;
- color: #069370;
-
+ color: #DB411B;
  }
  .menu-toggle:before{
   content: '\f0c9 ';
@@ -223,6 +230,7 @@ nav.active{
  }
  nav.active ul li a{
   margin: 0;
+  color: white;
  }
 }
 #features{
@@ -274,11 +282,11 @@ nav.active{
     line-height: 1.2rem;
 }
 
-/* features ends here */
+/* features ends here 
 
 
-/* another about application starts here */
-#back{
+ another about application starts here 
+*/#back{
     padding:100px 0px; 
     display: flex;
     align-items: center;
@@ -321,10 +329,10 @@ nav.active{
 }
 
 
-/* another about application ends here */
+/* another about application ends here 
+*/
 
-
-/*clients starts here*/
+/*/*clients starts here*/
 
 .clients{
     display: flex;
@@ -374,10 +382,10 @@ font-family: Rancho, cursive;
         line-height: 2em;
     }
 }
-/*clients ends here*/
+/*clients ends here
 
 
 /* Profile card starts here
-/*--cardflip starts here--*/
+/*--cardflip starts here--
 
 
