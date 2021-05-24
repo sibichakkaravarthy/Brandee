@@ -9,7 +9,6 @@ h2,a {
 		font-family: 'Mountains of Christmas', cursive;
 }
 
-
 section
 {
 	position: relative;
@@ -73,7 +72,7 @@ opacity: 1;
 	min-width: 55px;
 }
 
-.content .textbox h2 {
+.content .textbox h2 h1{
 	color: #F53C13;
 	font-size: 1.5rem;
     margin-bottom: 10px;

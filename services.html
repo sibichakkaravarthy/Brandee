@@ -7,12 +7,31 @@
     <link rel="stylesheet" href="services.css" />
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"
+       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
   </head>
 <body>
-		<a href="index.html" class="logo"></a></header>
-	 <section id="features">
+          <header>
+    
+    
+      
+        <a href="index.html" class="logo"></a>
+        <div class="menu-toggle"></div>
+        <nav >
+  <ul class="hmenu">
+    <li class="hlist"><a class="amenu" href="home.html" class="active">Home</a></li>
+     <li class="hlist"><a class="amenu" href="product.html">Product</a></li>
+      <li class="hlist"><a class="amenu" href="services.html">Services</a></li>
+       <li class="hlist"><a class="amenu" href="team.html">Team</a></li>
+        <li class="hlist"><a class="amenu" href="contact.html">Contact Us</a></li>
+  </ul>    
+    </nav>
+    <div class="clearfix"></div>
+  </header>
+
+     <section id="features">
             <h1>Perspective of Planning</h1>
             <div class="feature-row">
                 <div class="feature-col">
@@ -79,73 +98,18 @@
             <img src="./logo2.jpeg">
             <img src="./logo3.jpeg">
         </p>
+    </div>
     </section>
 
     <!--clients ends here-->
 
-
-
-     <!-- Profile card starts here -->
-
-
-    <!--flip card starts-->
-    <div class="footcontent">
- <h1 class="card-flip" id="tstyle">Our team</h1>
-    <div class="flip">
-        <div class="content">
-            <div class="front">
-                <!--<h1><b>Nandeesh Kumaravelu</b></h1>-->
-            </div>
-            <div class="back">
-                <h2 style="font-weight: 600; font-family:Georgia, 'Times New Roman', Times, serif;">Nandeesh Kumar K<br>(Nandoo)</h2>
-                <p>
-                    Hi, there! I am Nandoo and I am the Co-founder of this company from India. I love travelling on weekends. And my passion is about learning languages.      
-                </p>
-                <button>View Profile</button>
-            </div>
-        </div>
-        <!--2nd flip card starts-->
-        <div class="content">
-            <div class="front">
-               <!-- <h1>BENJAMIN</h1>-->
-            </div>
-            <div class="back">
-                <h2 style="font-weight: 600; font-family:Georgia, 'Times New Roman', Times, serif;">Ajith Jubilson<br>(Ajith)</h2>
-                <p>
-                    Hi, there! I am Ajith and I am the Co-founder of this company from India. I enjoy my free time reading books and spending time with family.     
-                </p>
-                <button>View Profile</button>
-            </div>
-        </div>
-          <!--3rd flip card starts-->
-        <div class="content">
-            <div class="front">
-                <!--<h1>Sibi Chakkaravarthy Sethuraman</h1>-->
-            </div>
-            <div class="back">
-                <h2 style="font-weight: 600; font-family:Georgia, 'Times New Roman', Times, serif;">Sibi Chakkaravarthy S<br>(Sibi)</h2>
-                <p>
-                    Hi, there! I am Sibi and I am the Co-founder of this company. I enjoy my time creating cool websites on the internet. My passion is about learning new tech's.      
-                </p>
-                <button>View Profile</button>
-            </div>
-        </div>
-        <!-- 4rd flip card starts -->
-        <div class="content">
-            <div class="front">
-                <!--<h1>Maheswaran Veeraiah</h1>-->
-            </div>
-            <div class="back">
-                <h2 style="font-weight: 600; font-family:Georgia, 'Times New Roman', Times, serif;">Maheswaran V<br>(Mahi)</h2>
-                <p>
-                    Hi, there! I am Mahesh and I am the Co-founder of this company from India. I enjoy my free time reading books and spending time with family. I love linux.     
-                </p>
-                <button>View Profile</button>
-            </div>
-        </div>
-        <!-- 4th flip card ends -->
-
-    </div>
-     
-
+       <script type="text/javascript">
+           $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active')
+            })
+           })
+       </script>
 </body>
+
+</html>
