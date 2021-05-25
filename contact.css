@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kalam:wght@300&family=Merienda&family=Rock+Salt&display=swap');
 
 * {
   margin: 0;
@@ -10,6 +11,8 @@ body,
 input,
 textarea {
   font-family: "Poppins", sans-serif;
+  background: navy;
+
 }
 
 .titleleft{
@@ -18,7 +21,7 @@ textarea {
 header{
   position: relative;
   max-width: 1700px;
-  margin: 10px auto;
+  margin:  auto;
   padding: 10px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3724b5+0,f2722e+97,f2722e+97,f95827+100 */
 background: #3724b5; /* Old browsers */
@@ -81,6 +84,8 @@ nav ul li{
 nav ul li a{
   display: block;
   margin: 10px 0;
+   font-family: 'Merienda', cursive;
+
   font-size: 20px;
   color: white;
   padding: 10px 20px;

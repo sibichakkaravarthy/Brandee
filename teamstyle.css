@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kalam:wght@300&family=Merienda&family=Rock+Salt&display=swap');
 
 *{
     margin: 0;
@@ -7,8 +8,10 @@
     padding: 0;
     box-sizing: border-box; 
 }
-
 body{
+    background: navy;
+}
+section {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -26,9 +29,136 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0010c9', end
     position: relative;
     width: 1000px;
     display: flex;
+
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 20px 0;
+}
+header{
+  position: relative;
+  max-width: 1700px;
+  margin:  auto;
+  padding: 10px;
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3724b5+0,f2722e+97,f2722e+97,f95827+100 */
+background: #3724b5; /* Old browsers */
+background: -moz-linear-gradient(left,  #3724b5 0%, #f2722e 97%, #f2722e 97%, #f95827 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #3724b5 0%,#f2722e 97%,#f2722e 97%,#f95827 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #3724b5 0%,#f2722e 97%,#f2722e 97%,#f95827 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3724b5', endColorstr='#f95827',GradientType=1 ); /* IE6-9 */
+box-sizing: border-box;
+border-radius: 4px;
+box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.logo {
+  position: relative;
+  color: #082781;
+  display: inline-block;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 800;
+  opacity: 0;
+  animation: slide_left 0.5s linear forwards;
+  animation-delay: 0.2s;
+}
+@keyframes slide_left{
+  0% 
+  {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% 
+  {
+    transform: translateX(0px);
+opacity: 1;
+  }
+}
+.logo{
+   max-height: 100%;
+   max-width: 100%;
+   width: 100px;
+   height: 100px;
+   /*border: 1px solid;*/
+   background: url('./Brandee_1_transparent.png') no-repeat scroll center center transparent;
+   background-size: cover;
+   float: left;
+}
+nav{
+  float: right;
+
+
+}
+.clearfix{
+  clear: both;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  display: block;
+  margin: 10px 0;
+  font-family: 'Merienda', cursive;
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  /*color: #262626;*/
+}
+nav ul li a.active,
+nav ul li a:hover {
+  background: #2D2092;
+  color: #fff;
+  transition: 0.5s;
+}
+@media (max-width:1200px){
+header{
+  margin:  20px;
+}
+}
+@media (max-width:768px){
+.menu-toggle{
+ display: block;
+ width: 40px;
+ height: 40px;
+ margin: 10px;
+ background: white;
+ float: right;
+ cursor: pointer;
+ text-align: center;
+ font-size: 30px;
+ color: #DB411B;
+ }
+ .menu-toggle:before{
+  content: '\f0c9 ';
+  font-family: fontAwesome;
+  line-height: 40px;
+ }
+ .menu-toggle.active:before{
+  content: '\f00d';
+
+ }
+ nav{
+  display: none;
+ }
+nav.active{
+  display: block;
+  width: 100%;
+
+ }
+ nav.active ul {
+  display: block;
+ }
+ nav.active ul li a{
+  margin: 0;
+  color: white;
+ }
 }
 .imgBx{
     height: 100%;
